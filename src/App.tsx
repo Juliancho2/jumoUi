@@ -1,10 +1,16 @@
+import Button from './components/Button';
 import './App.css';
-import { Button } from 'antd';
 
 function App () {
   return (
     <>
-    <Button>Primary</Button>
+      <h2>Button</h2>
+      <div className='space-y-4'>
+        <Button>Default</Button>
+        <Button variant='primary' >Primary</Button>
+        <Button variant='secondary'>secondary</Button>
+        <Button variant='neutral' >Neutral</Button>
+      </div>
     </>
   );
 }

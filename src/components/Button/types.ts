@@ -1,5 +1,9 @@
-import { ReactNode } from 'react';
+// import { Button as AntButton } from 'antd';
+import React, { ReactNode } from 'react';
 
-export type ButtonProps={
-    children:ReactNode
+type ButtonVariant='primary' | 'secondary' | 'neutral' | 'default'
+
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+    children:ReactNode,
+    variant?:ButtonVariant
 }
