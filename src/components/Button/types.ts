@@ -1,9 +1,8 @@
-// import { Button as AntButton } from 'antd';
 import React, { ReactNode } from 'react';
-
-type ButtonVariant='primary' | 'secondary' | 'neutral' | 'default'
+import { ButtonSize, ButtonVariant } from './constants/enumsButton';
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-    children:ReactNode,
-    variant?:ButtonVariant
+    children: ReactNode,
+    variant?: ButtonVariant | string,
+    size?:ButtonSize | string
 }

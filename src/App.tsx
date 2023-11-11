@@ -4,12 +4,13 @@ import './App.css';
 function App () {
   return (
     <>
-      <h2>Button</h2>
-      <div className='space-y-4'>
+      <h2>Buttons</h2>
+      <div className='flex gap-5'>
         <Button>Default</Button>
-        <Button variant='primary' >Primary</Button>
-        <Button variant='secondary'>secondary</Button>
-        <Button variant='neutral' >Neutral</Button>
+        <Button variant={'primary'} size={'base'} >Primary</Button>
+        <Button variant={'secondary'} size={'base'}>secondary</Button>
+        <Button variant={'neutral'} size={'base'}>Neutral</Button>
+        <Button variant={'custom'}>Custom</Button>
       </div>
     </>
   );
